@@ -1,0 +1,1026 @@
+@charset 'utf-8';
+
+.inner {
+    width: 142rem;
+    margin: 0 auto;
+
+    /* background: #ff5; */
+}
+
+/* s.visual */
+.visual {
+    /* height: 86.9rem; */
+    margin-top: 13rem;
+    position: relative;
+}
+
+.visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.visual-title {
+    position: absolute;
+    top: 20%;
+    left: 30.8rem;
+
+    left: 16.0417%;
+
+    color: #fff;
+    z-index: 1;
+}
+
+.visual-title h2 {
+    font-size: 8rem;
+
+    font-size: clamp(2.9rem, 4.167vw, 8rem);
+}
+
+.visual-title h2 i {
+    font-weight: 700;
+}
+
+.visual-title p {
+    font-size: clamp(1.4rem, 1.6vw, 2rem);
+}
+
+.visual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.6;
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.app-dwn {
+    margin-top: 4.8rem;
+    margin-top: 3.5%;
+}
+
+.dwn-btn {
+    display: flex;
+    gap: 3.2rem;
+    margin-top: 1.6rem;
+    margin-top: 2%;
+}
+
+.google a {
+    display: block;
+    border-radius: 3rem;
+    padding: 1.6rem 3.4rem;
+    background: #fff;
+}
+.google a::after {
+    content: "";
+    display: block;
+    width: 13rem;
+    height: 3rem;
+    background: url(../img/google-icon.svg) no-repeat 50% / contain;
+}
+
+.apple a {
+    display: block;
+    border-radius: 3rem;
+    padding: 1.6rem 4.4rem;
+    background: #fff;
+}
+.apple a::after {
+    content: "";
+    display: block;
+    width: 13rem;
+    height: 3rem;
+    background: url(../img/apple-icon.svg) no-repeat 50% / contain;
+}
+
+/* e.visual */
+
+/* s.intro */
+
+.intro {
+    padding: 12rem 0 17.6rem;
+    padding: 6.25% 0 9.1667%;
+    text-align: center;
+}
+
+.sec-title {
+    font-size: 4rem;
+    font-size: clamp(2rem, 2.817vw, 4rem);
+
+    font-weight: 800;
+    color: var(--main-darck);
+}
+
+.intro p {
+    margin-top: 2.4rem;
+    font-size: clamp(1.3rem, 1.6901vw, 2.4rem);
+}
+
+.intor-list {
+    display: flex;
+    justify-content: center;
+    gap: 18.5rem;
+    margin: 8.3rem auto 0;
+    width: 106.8rem;
+    width: 75.2113%;
+
+    /* border: 1px solid #000; */
+}
+
+.intor-list li {
+    display: flex;
+    width: 23.2rem;
+    width: 21.7228%;
+
+    align-items: center;
+    flex-direction: column;
+    gap: 4.1rem;
+
+    font-weight: 600;
+    font-size: 4rem;
+    font-size: clamp(1.5rem, 2.817vw, 4rem);
+
+    color: var(--main-darck);
+
+    /* border: 1px solid #000; */
+}
+
+.intor-list li::before {
+    content: "";
+    display: block;
+    width: 14.9rem;
+    width: 64.2241%;
+    /* aspect-ratio: 1/1; */
+
+    height: 14.9rem;
+    background: no-repeat 50% / contain;
+}
+
+.intor-list li:nth-child(1):before {
+    background-image: url(../img/intro-icon-1.svg);
+}
+.intor-list li:nth-child(2):before {
+    background-image: url(../img/intro-icon-2.svg);
+}
+.intor-list li:nth-child(3):before {
+    background-image: url(../img/intro-icon-3.svg);
+}
+
+/* e. intro */
+
+/* s. meun */
+.meun {
+    background: var(--main-color);
+    padding: 12.2rem 0 16.2rem;
+
+    padding: 8.5915% 0 11.4085%;
+}
+
+.meun-btn {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.meun-btn li {
+    background: #fff;
+    width: 15.9rem;
+    width: 11.1972%;
+
+    height: 5.8rem;
+    border-radius: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 800;
+    font-size: 2.1rem;
+    font-size: clamp(1.4rem, 1.4789vw, 2.1rem);
+
+    color: var(--main-darck);
+}
+
+.meun-btn li:hover {
+    background: var(--main-darck);
+    color: #fff;
+}
+/* 카테고리 */
+
+/* 메뉴 틀 */
+.meun-con {
+    margin-top: 4.7rem;
+    margin-top: 3.3099%;
+    gap: 3.5rem;
+    /* background: #5f5; */
+
+    display: grid;
+    grid-template-columns: 57rem 39rem 39rem; /* gtc */
+    grid-template-columns: 40.1408% 27.4648% 27.4648%;
+    grid-template-rows: 27.1831% 27.1831%;
+    grid-template-rows: 38.6rem 38.6rem;
+}
+
+.meun-con li:nth-child(1) {
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    /* padding: 5rem 4rem; */
+    padding: 8.7719% 4rem;
+}
+
+.meun-con li {
+    border-radius: 3rem;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* padding: 2.5rem 3rem; */
+    padding: 6.4103% 3rem;
+}
+/* 메뉴 틀 */
+
+/* 이미지 */
+.meun-con li:nth-child(1) figure {
+    width: 47rem;
+    width: 100%;
+
+    height: 34.5rem;
+}
+.meun-con li:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.meun-con li figure {
+    width: 32.8rem;
+    width: 100%;
+    height: 14.5rem;
+
+    aspect-ratio: 1/0.442;
+}
+.meun-con li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* // 이미지*/
+
+/* 베스트 글씨 */
+.meun-con .menu-text strong {
+    display: block;
+    font-weight: 800;
+    font-size: 3.8rem;
+    font-size: clamp(2rem, 2.676vw, 3.8rem);
+
+    color: var(--darck-100);
+}
+
+.meun-con .menu-text dl dt {
+    font-weight: 400;
+    font-size: 2.4rem;
+    font-size: clamp(1.2rem, 1.6901vw, 2.4rem);
+
+    color: var(--darck-60);
+
+    padding: 0.4rem 0 0.4rem;
+    padding: 0.7017% 0 0.7017%;
+}
+
+.meun-con .menu-text dl dd {
+    font-weight: 300;
+    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 1.1267vw, 1.6rem);
+}
+/* 베스트 글씨 */
+
+/* 베스트 버튼 */
+.meun-con .best-order strong {
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-size: clamp(1.6rem, 2.2535vw, 3.2rem);
+}
+
+.meun-con .best-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.best-order-btn {
+    width: 20.7rem;
+    width: 42.3313%;
+
+    height: 6.5rem;
+    border-radius: 5rem;
+    padding: 0.9rem 2.5rem;
+    background: var(--darck-30);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.8rem;
+    font-size: clamp(1.4rem, 1.9718vw, 2.8rem);
+}
+
+.best-order-btn::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    width: 30%;
+    height: 3rem;
+
+    background: url(../img/buy-icon.svg) no-repeat 50% / contain;
+}
+
+.best-order-btn:hover {
+    background: #000;
+    color: #fff;
+}
+/* 베스트 버튼 */
+
+/* 작은메뉴 글씨 */
+.meun-con li dl dt {
+    font-weight: 700;
+    font-size: 2.8rem;
+    font-size: clamp(2rem, 1.9718vw, 2.8rem);
+
+    color: #000;
+}
+.meun-con li dl dd {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.0563vw, 1.5rem);
+
+    color: var(--darck-60);
+}
+.meun-con strong {
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-size: clamp(1.6rem, 1.5493vw, 2.2rem);
+
+    color: #000;
+}
+/* 작은메뉴 글씨 */
+
+/* 작은메뉴 버튼 */
+.meun-con .order-btn {
+    display: flex;
+    width: 7rem;
+    width: 21.2122%;
+
+    height: 7rem;
+    border-radius: 5rem;
+    background: var(--darck-30);
+
+    align-items: center;
+}
+
+.meun-con .order-btn::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    width: 42.8571%;
+    height: 3rem;
+    margin: 0 auto;
+
+    align-items: center;
+    background: url(../img/buy-icon.svg) no-repeat 50% / contain;
+}
+
+.meun-con .order-btn:hover {
+    background: #000;
+}
+/* 작은메뉴 버튼 */
+
+/* e.meun */
+
+/* s.commpany */
+
+.company .brand-story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14.3rem;
+    padding-top: 10.0704%;
+}
+
+.content {
+    width: 58.6rem;
+    width: 41.2676%;
+}
+
+.company figure {
+    width: 59.7rem;
+    height: 65.9rem;
+    aspect-ratio: 1/1.1039;
+}
+
+.company-title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-size: clamp(1.4rem, 2.2535vw, 3.2rem);
+
+    color: var(--main-color);
+}
+
+.company-text strong {
+    font-weight: 800;
+    font-size: 4rem;
+    font-size: clamp(2rem, 2.817vw, 4rem);
+
+    color: #000;
+    margin-top: 2.2rem;
+}
+
+.company-text p {
+    font-weight: 300;
+    font-size: 2.4rem;
+    font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+
+    color: var(--darck-30);
+    margin-top: 0.7rem;
+}
+
+.more {
+    width: 24rem;
+    width: 40.9999%;
+
+    height: 7.2rem;
+    border-radius: 5rem;
+    background: var(--main-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-top: 3.6rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+
+    color: #fff;
+}
+
+.more::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    width: 12.5%;
+    height: 3rem;
+    background: url(../img/moer-con.svg) no-repeat 50% / contain;
+}
+
+.more:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* 유튜브 */
+
+.youtube {
+    margin-top: 17.7rem;
+    margin-top: 9.2188%;
+
+    padding: 7.9rem 9rem;
+    padding: 5.5634% 6.338%;
+    background: var(--main-color);
+}
+
+.youtube-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.youtube h4 {
+    margin-top: 7.9rem;
+    margin-top: 5.5634%;
+    font-weight: 800;
+    font-size: 4rem;
+    font-size: clamp(1.5rem, 2.817vw, 4rem);
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    color: #fff;
+}
+
+.youtube h4::before {
+    content: "";
+    display: block;
+    width: 4.5rem;
+
+    height: 4.5rem;
+    background: url(../img/you-con.svg) no-repeat 50% / contain;
+}
+
+.youtube-con div {
+    width: 98rem;
+    width: 69.0141%;
+
+    aspect-ratio: 16/9;
+    margin-top: 4rem;
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.youtube-con iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* e. 유튜브 */
+
+/* inner 000000000000000000000000000000000000000000000000000000000000*/
+@media screen and (max-width: 1450px) {
+    .inner {
+        width: 92.4rem;
+        width: 90.2344%;
+    }
+}
+
+/* 태블렛 000000000000000000000000000000000000000000000000000000000000*/
+@media screen and (max-width: 1400px) {
+    .inner {
+        width: 92.4rem;
+        width: 90.2344%;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .gnb-btn {
+        display: flex;
+        align-items: center;
+        gap: 5.5rem;
+    }
+
+    .btn {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .btn-s {
+        display: block;
+        width: 5rem;
+        width: 11.3636%;
+        height: 5rem;
+    }
+
+    .btn-m {
+        display: block;
+        width: 5rem;
+        width: 11.3636%;
+        height: 5rem;
+    }
+
+    .btn-s {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        background: url(../img/gnb-d.svg) no-repeat 50% / contain;
+    }
+    .btn-m {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        background: url(../img/gnb-moer.svg) no-repeat 50% / contain;
+    }
+
+    .dwn-btn a {
+        width: 20.4rem;
+        height: 5.9rem;
+    }
+
+    /* intor */
+
+    .intor-list {
+        width: 65rem;
+        width: 70.3463%;
+        gap: 11.2rem;
+    }
+
+    .intor-list li {
+        width: 14.1rem;
+        width: 21.6923%;
+        gap: 3rem;
+    }
+
+    .intor-list li:before {
+        width: 9.1rem;
+        width: 64.539%;
+        height: 9.1rem;
+    }
+
+    /* intor */
+
+    /* meun */
+    .meun-btn li {
+        width: 12.8rem;
+        width: 13.8528%;
+        height: 5.2rem;
+    }
+
+    .meun-con {
+        margin-top: 3.8rem;
+        margin-top: 4.1126%;
+        gap: 2rem;
+
+        display: grid;
+        grid-template-columns: 38.2rem 25.1rem 25.1rem; /* gtc */
+        grid-template-rows: 27.2rem 27.2rem;
+        grid-template-columns: 41.342% 27.1645% 27.1645%;
+    }
+
+    .meun-con .best-order {
+        margin-top: 2.3rem;
+    }
+
+    .best-order-btn {
+        width: 15.5rem;
+        width: 51.495%;
+
+        height: 6rem;
+        gap: 1.5rem;
+    }
+
+    .best-order-btn::after {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .meun-con .order-btn {
+        width: 5.1rem;
+        height: 5rem;
+    }
+
+    .meun-con .order-btn::after {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .meun-con li:nth-child(1) figure {
+        height: 22.6rem;
+    }
+
+    .meun-con li figure {
+        height: 9.4rem;
+    }
+    /* meun */
+
+    /* company */
+    .content {
+        width: 44.2rem;
+        width: 47.8355%;
+    }
+
+    .more {
+        width: 18.4rem;
+        width: 41.8182%;
+        height: 6.3rem;
+    }
+
+    .more::after {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .company figure {
+        width: 38.8rem;
+        width: 41.9913%;
+
+        height: 42.9rem;
+        border-radius: 3rem;
+        overflow: hidden;
+    }
+    /* company */
+
+    /* sev */
+    .sev-con {
+        gap: 1.4rem;
+    }
+
+    .service-btn {
+        width: 8rem;
+        height: 8rem;
+
+        font-size: 1.4rem;
+    }
+    /* sev */
+
+    /* footer */
+    .foot-logo {
+        width: 9.7rem;
+        width: 47.549%;
+
+        height: 4.5rem;
+    }
+    /* footer */
+}
+
+/* 모바일 버전  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+@media screen and (max-width: 800px) {
+    .inner {
+        width: 39rem;
+        width: 90.6977%;
+    }
+
+    .btn-s {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .btn-m {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .util-menu {
+        display: none;
+    }
+
+    .visual {
+        height: 27.8rem;
+    }
+
+    .visual img {
+        height: 27.8rem;
+    }
+
+    .visual-title {
+        width: 31.4rem;
+        text-align: center;
+        top: 4rem;
+        left: 6rem;
+    }
+
+    .dwn-btn {
+        gap: 2.1rem;
+    }
+
+    .google a {
+        width: 14.5rem;
+        height: 4.2rem;
+        padding: 0.5rem 3rem;
+    }
+
+    .google a::after {
+        width: 8.6rem;
+        background: contain;
+    }
+
+    .apple a {
+        width: 14.5rem;
+        height: 4.2rem;
+        padding: 0.5rem 3rem;
+    }
+
+    .apple a::after {
+        width: 8.6rem;
+        background: contain;
+    }
+    /* visual */
+
+    .intor-list {
+        width: 39rem;
+        gap: 4.5rem;
+        margin: 2.4rem auto 0;
+    }
+
+    .intor-list li {
+        width: 9rem;
+        gap: 2.1rem;
+    }
+
+    .intor-list li:before {
+        width: 6.3rem;
+        height: 6.3rem;
+    }
+
+    .intro p {
+        margin-top: 0.8rem;
+    }
+
+    /* meun */
+    .meun-btn li {
+        width: 9.2rem;
+        height: 4rem;
+    }
+
+    .meun-con {
+        display: flex;
+        overflow-x: auto;
+        gap: 2rem;
+    }
+
+    /* best-con */
+    ul {
+        position: relative;
+    }
+
+    .meun-con li:nth-child(1) {
+        width: 23.5rem;
+        padding: 1.9rem 1.6rem;
+    }
+
+    .meun-con li:nth-child(1) figure {
+        width: 19.9rem;
+        height: 10.8rem;
+    }
+
+    .meun-con li:nth-child(1) img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .meun-con .menu-text strong {
+        padding-top: 1.6rem;
+    }
+
+    .meun-con .menu-text dl dt {
+        padding: 0.2rem 0 1.5rem;
+    }
+
+    .meun-con .menu-text dl dd {
+        display: none;
+    }
+
+    .meun-con .best-order {
+        margin-top: 0;
+        gap: 3.1rem;
+    }
+
+    .best-order-btn {
+        display: flex;
+        width: 10rem;
+        height: 3.8rem;
+        padding: 0.3rem;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    /* best-meun */
+
+    /* meun-con */
+    .meun-con li {
+        width: 23.5rem;
+        padding: 1.9rem 1.6rem;
+    }
+
+    .meun-con li figure {
+        width: 19.9rem;
+        height: 10.8rem;
+    }
+
+    .meun-con li figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .meun-con li dl dt {
+        font-weight: 800;
+        padding-top: 1.6rem;
+    }
+
+    .meun-con li dl dd {
+        padding: 0.2rem 0 1.5rem;
+    }
+
+    .meun-con .order-btn {
+        display: flex;
+        width: 10rem;
+        height: 3.8rem;
+        padding: 0.9rem;
+        gap: 1rem;
+    }
+
+    .meun-con .order-btn::before {
+        content: "주문하기";
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    .order {
+        gap: 3.1rem;
+    }
+    /* meun */
+
+    /* company */
+    .company .brand-story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .company-text {
+        padding: 0.5rem 0 0.5rem;
+    }
+
+    .content {
+        width: 39rem;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .company figure {
+        width: 39rem;
+        height: 22.8rem;
+        margin-top: 1rem;
+    }
+
+    .company figure img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3rem;
+        filter: brightness(0.4);
+    }
+
+    .more {
+        width: 17.5rem;
+        height: 5.1rem;
+        position: absolute;
+        bottom: 3rem;
+        margin: 0 11rem 0;
+
+        gap: 1.5rem;
+        z-index: 1;
+    }
+
+    .more::after {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    /* company */
+
+    .youtube {
+        margin-top: 10rem;
+        padding: 2.4rem 2rem;
+    }
+
+    .youtube h4 {
+        gap: 0.5rem;
+    }
+
+    .youtube h4::before {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 auto;
+    }
+
+    .youtube-con div {
+        margin-top: 1.2rem;
+        width: 39rem;
+        height: 22.1rem;
+        border-radius: 2rem;
+    }
+    /* youtube */
+
+    /* service */
+    .service-btn {
+        width: 8.8rem;
+        height: 8.8rem;
+    }
+    /* service */
+
+    /* foot */
+    .footer-con {
+        margin-top: 2.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    address {
+        font-weight: 300;
+    }
+
+    .foot-icon {
+        display: flex;
+        align-items: center;
+        gap: 4.3rem;
+    }
+    /* foot */
+}
+
+/* 베스트 메뉴가 줄어 들다 보면 세로 스크롤이 생기는데 나중에 수업? 때 따로 수정 그리고 햄버거도 나중에 추가 하기 */
