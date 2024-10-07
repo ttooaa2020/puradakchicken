@@ -207,8 +207,17 @@
     color: var(--main-darck);
 }
 
+.meun-btn li.on {
+    background: var(--main-darck);
+    color: #fff;
+}
+
 .meun-btn li:hover {
     background: var(--main-darck);
+    color: #fff;
+}
+
+.meun-btn li a:hover {
     color: #fff;
 }
 /* 카테고리 */

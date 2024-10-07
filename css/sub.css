@@ -242,17 +242,13 @@
     color: var(--main-darck);
 }
 
-.menu-btn {
+.all-menu-btn {
     display: flex;
     align-items: center;
     gap: 2.2rem;
 }
 
-.menu-btn li:nth-child(1) {
-    background: var(--darck-100);
-}
-
-.menu-btn li {
+.all-menu-btn li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,11 +264,15 @@
     color: #fff;
 }
 
-.menu-btn li:hover {
+.all-menu-btn li.on {
     background: var(--darck-100);
 }
 
-.menu-btn a:hover {
+.all-menu-btn li:hover {
+    background: var(--darck-100);
+}
+
+.all-menu-btn a:hover {
     color: #fff;
 }
 
