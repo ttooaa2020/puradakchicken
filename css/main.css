@@ -9,9 +9,14 @@
 
 /* s.visual */
 .visual {
-    /* height: 86.9rem; */
     margin-top: 13rem;
+    overflow: hidden;
     position: relative;
+}
+
+.visual-img {
+    height: 86rem;
+    height: 100%;
 }
 
 .visual img {
@@ -19,6 +24,69 @@
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
+}
+
+.top-slider {
+    height: 100%;
+}
+
+.top-slider-wrap .btn-prev {
+    position: absolute;
+    top: 50%;
+    left: 6rem;
+
+    background: initial;
+    z-index: 5;
+}
+
+.top-slider-wrap .btn-prev::after {
+    content: "";
+    display: block;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../img/arrow.svg) no-repeat 50% / contain;
+}
+
+.top-slider-wrap .btn-next {
+    position: absolute;
+    top: 50%;
+    right: 6rem;
+
+    background: initial;
+    z-index: 5;
+
+    transform: rotate(180deg);
+}
+
+.top-slider-wrap .btn-next::after {
+    content: "";
+    display: block;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../img/arrow.svg) no-repeat 50% / contain;
+}
+
+.top-slider-wrap .pagination {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    /* background: #f5f5; */
+
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+
+    z-index: 5;
+}
+
+.swiper-pagination-bullet {
+    width: 1.3rem;
+    height: 1.3rem;
+    background: var(--darck-30);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color);
 }
 
 .visual-title {
@@ -46,8 +114,9 @@
     font-size: clamp(1.4rem, 1.6vw, 2rem);
 }
 
-.visual::after {
+.visual-img::after {
     content: "";
+    height: 86rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -621,6 +690,22 @@
         height: 5.9rem;
     }
 
+    /* visual */
+    .top-slider-wrap .btn-prev::after {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .top-slider-wrap .btn-next::after {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .swiper-pagination-bullet {
+        width: 1rem;
+        height: 1rem;
+    }
+    /* visual */
+
     /* intor */
 
     .intor-list {
@@ -766,6 +851,19 @@
 
     .util-menu {
         display: none;
+    }
+
+    /* visual */
+    .top-slider-wrap .btn-prev::after {
+        display: none;
+    }
+    .top-slider-wrap .btn-next::after {
+        display: none;
+    }
+
+    .swiper-pagination-bullet {
+        width: 0.8rem;
+        height: 0.8rem;
     }
 
     .visual {

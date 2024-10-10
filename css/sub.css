@@ -635,15 +635,6 @@
 
     .menu-list dd {
         padding: 0.3em 0 0;
-        height: 5.1rem;
-
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: normal;
-        word-wrap: break-word;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
     }
 
     .order-btn {
