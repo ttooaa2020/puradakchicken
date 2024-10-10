@@ -4,12 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>푸라닭</title>
+        <link rel="shortcut icon" href="./img/logo-icon1.png" type="image/x-icon" />
+
         <link rel="stylesheet" href="./css/reset.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/main.css" />
 
-        <link rel="shortcut icon" href="./img/logo-icon1.png" type="image/x-icon" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+
+        <script src="./js/script.js"></script>
     </head>
     <body>
         <!-- 모바일용 메뉴 -->
@@ -118,27 +125,92 @@
         <main id="main">
             <!-- s. visual -->
             <section class="visual">
-                <div class="visual-img">
-                    <img src="./img/slide-img.jpg" alt="치킨" />
-                </div>
+                <div class="top-slider-wrap">
+                    <!-- 커스텀 버튼 -->
+                    <!-- button:button.btn-*2 -->
+                    <button type="button" class="btn-prev"><i class="hidden">이전</i></button>
+                    <button type="button" class="btn-next"><i class="hidden">다음</i></button>
 
-                <div class="visual-title">
-                    <h2><i>‘치킨’</i> <br />요리가 되다</h2>
-                    <div class="app-dwn">
-                        <p>앱 다운로드 스토어</p>
-                        <div class="dwn-btn">
-                            <div class="google">
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.wmpoplus.puradakchicken&hl=ko&pli=1"
-                                    ><i class="hidden">구글</i></a
-                                >
+                    <div class="pagination"></div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper top-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide visual-img">
+                                <img src="./img/slide-img.jpg" alt="" />
+                                <div class="visual-title">
+                                    <h2><i>‘치킨’</i> <br />요리가 되다</h2>
+                                    <div class="app-dwn">
+                                        <p>앱 다운로드 스토어</p>
+                                        <div class="dwn-btn">
+                                            <div class="google">
+                                                <a
+                                                    href="https://play.google.com/store/apps/details?id=com.wmpoplus.puradakchicken&hl=ko&pli=1"
+                                                    ><i class="hidden">구글</i></a
+                                                >
+                                            </div>
+
+                                            <div class="apple">
+                                                <a
+                                                    href="https://apps.apple.com/kr/app/%ED%91%B8%EB%9D%BC%EB%8B%AD-%EC%B9%98%ED%82%A8/id6444139679"
+                                                    ><i class="hidden">애플</i></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide visual-img">
+                                <img src="./img/slide-img.jpg" alt="" />
+                                <div class="visual-title">
+                                    <h2><i>‘치킨’</i> <br />요리가 되다</h2>
+                                    <div class="app-dwn">
+                                        <p>앱 다운로드 스토어</p>
+                                        <div class="dwn-btn">
+                                            <div class="google">
+                                                <a
+                                                    href="https://play.google.com/store/apps/details?id=com.wmpoplus.puradakchicken&hl=ko&pli=1"
+                                                    ><i class="hidden">구글</i></a
+                                                >
+                                            </div>
 
-                            <div class="apple">
-                                <a
-                                    href="https://apps.apple.com/kr/app/%ED%91%B8%EB%9D%BC%EB%8B%AD-%EC%B9%98%ED%82%A8/id6444139679"
-                                    ><i class="hidden">애플</i></a
-                                >
+                                            <div class="apple">
+                                                <a
+                                                    href="https://apps.apple.com/kr/app/%ED%91%B8%EB%9D%BC%EB%8B%AD-%EC%B9%98%ED%82%A8/id6444139679"
+                                                    ><i class="hidden">애플</i></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide visual-img">
+                                <img src="./img/slide-img.jpg" alt="" />
+                                <div class="visual-title">
+                                    <h2><i>‘치킨’</i> <br />요리가 되다</h2>
+                                    <div class="app-dwn">
+                                        <p>앱 다운로드 스토어</p>
+                                        <div class="dwn-btn">
+                                            <div class="google">
+                                                <a
+                                                    href="https://play.google.com/store/apps/details?id=com.wmpoplus.puradakchicken&hl=ko&pli=1"
+                                                    ><i class="hidden">구글</i></a
+                                                >
+                                            </div>
+
+                                            <div class="apple">
+                                                <a
+                                                    href="https://apps.apple.com/kr/app/%ED%91%B8%EB%9D%BC%EB%8B%AD-%EC%B9%98%ED%82%A8/id6444139679"
+                                                    ><i class="hidden">애플</i></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -147,7 +219,6 @@
             <!-- e. visual -->
 
             <!-- s. intro -->
-            <!-- data-aos="fade-up" -->
             <section class="intro" data-aos="fade-up">
                 <div class="inner">
                     <h3 class="sec-title">가치 있는 시간을 선물 합니다</h3>
@@ -379,12 +450,5 @@
             </div>
         </footer>
         <!-- e. footer -->
-
-        <div class="inner">
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script src="./js/jquery-3.7.1.min.js"></script>
-            <script src="./js/aos.js"></script>
-            <script src="./js/script.js"></script>
-        </div>
     </body>
 </html>
