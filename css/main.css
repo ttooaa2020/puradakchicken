@@ -919,7 +919,7 @@
     }
 
     /* meun */
-    .meun-btn button {
+    .meun-btn li button {
         width: 9.2rem;
         height: 4rem;
     }
@@ -1118,6 +1118,13 @@
         gap: 4.3rem;
     }
     /* foot */
+}
+
+@media screen and (max-width: 480px) {
+    .meun-btn li button {
+        width: 8rem;
+        height: 4rem;
+    }
 }
 
 /* 베스트 메뉴가 줄어 들다 보면 세로 스크롤이 생기는데 나중에 수업? 때 따로 수정 그리고 햄버거도 나중에 추가 하기 */
