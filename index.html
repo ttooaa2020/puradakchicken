@@ -129,7 +129,7 @@
                     <!-- 커스텀 버튼 -->
                     <!-- button:button.btn-*2 -->
                     <button type="button" class="btn-prev"><i class="hidden">이전</i></button>
-                    <button type="button" class="btn-next"><i class="hidden">다음</i></button>
+                    <button type="button" class="btn-next">다음</button>
 
                     <div class="pagination"></div>
 
@@ -166,7 +166,7 @@
                             <div class="swiper-slide visual-img">
                                 <img src="./img/slide-img.jpg" alt="" />
                                 <div class="visual-title">
-                                    <h2><i>‘치킨’</i> <br />요리가 되다</h2>
+                                    <h2><i>‘푸라닭 치킨’</i> <br />믿고 선택 합니다.</h2>
                                     <div class="app-dwn">
                                         <p>앱 다운로드 스토어</p>
                                         <div class="dwn-btn">
@@ -191,7 +191,7 @@
                             <div class="swiper-slide visual-img">
                                 <img src="./img/slide-img.jpg" alt="" />
                                 <div class="visual-title">
-                                    <h2><i>‘치킨’</i> <br />요리가 되다</h2>
+                                    <h2><i>가치 있는 시간을</i> <br />선물 합니다.</h2>
                                     <div class="app-dwn">
                                         <p>앱 다운로드 스토어</p>
                                         <div class="dwn-btn">
@@ -239,97 +239,354 @@
             <section class="meun">
                 <div class="inner">
                     <div class="menu-tab">
-                        <ul class="meun-btn">
-                            <li><a href="#">Best</a></li>
-                            <li><a href="#">사이드 메뉴</a></li>
-                            <li><a href="#">푸레스트</a></li>
-                            <li><a href="#">P-피자</a></li>
+                        <ul class="tab-menu meun-btn">
+                            <li><button>Best</button></li>
+                            <li><button>사이드 메뉴</button></li>
+                            <li><button>푸레스트</button></li>
+                            <li><button>P-피자</button></li>
                         </ul>
-                        <div class="meun-list">
-                            <ul class="meun-con">
-                                <li>
-                                    <figure><img src="./img/chicken-1.jpg" alt="띱띱크런치" /></figure>
-                                    <div class="menu-text">
-                                        <strong>띱띱 크런치</strong>
+                        <div class="tab-con meun-list">
+                            <!-- 베스트 -->
+                            <div class="tab-con-item">
+                                <ul class="meun-con">
+                                    <li>
+                                        <figure><img src="./img/chicken-1.jpg" alt="띱띱크런치" /></figure>
+                                        <div class="menu-text">
+                                            <strong>띱띱 크런치</strong>
+                                            <dl>
+                                                <dt>
+                                                    다채로운 4종의 디핑소스에 <br />
+                                                    독보적 바삭함의 특제 콘 크러스트 <br />
+                                                    '신개념 찍먹 크런치 치킨’
+                                                </dt>
+                                                <dd>
+                                                    (*디핑 소스 4종 제공 : 대파크림, 콘버터, 트러플마요, 홍고추마요)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="best-order">
+                                            <strong>21,900원</strong>
+                                            <a href="menu.html" class="best-order-btn">주문하기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/chicken-2.jpg" alt="고추마요치킨" />
+                                        </figure>
                                         <dl>
-                                            <dt>
-                                                다채로운 4종의 디핑소스에 <br />
-                                                독보적 바삭함의 특제 콘 크러스트 <br />
-                                                '신개념 찍먹 크런치 치킨’
-                                            </dt>
-                                            <dd>(*디핑 소스 4종 제공 : 대파크림, 콘버터, 트러플마요, 홍고추마요)</dd>
+                                            <dt>고추마요 치킨</dt>
+                                            <dd>
+                                                강력추천! 맵다, 부드럽다, 고소하다, <br />
+                                                달콤하다, 새콤하다. <br />맛의 조합이 환상적인 강추메뉴.
+                                            </dd>
                                         </dl>
-                                    </div>
-                                    <div class="best-order">
-                                        <strong>21,900원</strong>
-                                        <a href="menu.html" class="best-order-btn">주문하기</a>
-                                    </div>
-                                </li>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><img src="./img/chicken-3.jpg" alt="콘소메이징" /></figure>
+                                        <dl>
+                                            <dt>콘소메이징</dt>
+                                            <dd>
+                                                잇츠 콘소메이징! 입안 가득 와르르 쏟아지는 <br />
+                                                옥수수의 무한 매력을 즐겨보세요
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><img src="./img/chicken-4.jpg" alt="블랙알리오" /></figure>
+                                        <dl>
+                                            <dt>블랙알리오</dt>
+                                            <dd>
+                                                깊고 진한 간장과 고소하면서 <br />담백한 마늘의 만남! 진정한 요리를
+                                                <br />느낄 수 있는 푸라닭의 대표 메뉴.
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/chicken-5.jpg" alt="제너럴 핫 치킨" />
+                                        </figure>
+                                        <dl>
+                                            <dt>제너럴 핫 치킨</dt>
+                                            <dd>
+                                                푸라닭의 스타일로 재탄생한 미국식 <br />퓨전 깐풍 소스와 치킨이 결합된
+                                                <br />
+                                                제너럴 쏘 치킨!
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                <li>
-                                    <figure>
-                                        <img src="./img/chicken-2.jpg" alt="고추마요치킨" />
-                                    </figure>
+                            <!-- 사이드 메뉴 -->
+                            <div class="side tab-con-item">
+                                <ul class="meun-con">
+                                    <li>
+                                        <figure><img src="./img/side1.jpg" alt="블랙치즈스틱" /></figure>
+                                        <div class="menu-text">
+                                            <strong>블랙치즈스틱 (4개입)</strong>
+                                            <dl>
+                                                <dt>
+                                                    흑미와 라이스 펍으로 멋을 낸 <br />
+                                                    또 하나의 푸라닭 블랙 사이드! 한입 가득 100% 모짜렐라 치즈 풍미를
+                                                    느껴보세요!
+                                                </dt>
+                                            </dl>
+                                        </div>
+                                        <div class="best-order">
+                                            <strong>3,900원</strong>
+                                            <a href="menu.html" class="best-order-btn">주문하기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/side2.jpg" alt="코울슬로" />
+                                        </figure>
+                                        <dl>
+                                            <dt>코울슬로</dt>
+                                            <dd>
+                                                양배추, 당근, 양파, 스위트콘 등 신선한 채소를 <br />
+                                                새콤달콤한 홀그레인 코울슬로 마요 소스에 버무려 <br />간편하게 먹는
+                                                프리미엄 샐러드
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>2,500원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><img src="./img/side3.jpg" alt="3색볼(3구)" /></figure>
+                                        <dl>
+                                            <dt>3색볼 (3구)</dt>
+                                            <dd>
+                                                블랙치즈볼(1ea)+ 크림치즈볼(1ea)+ <br />베이컨 감자볼(1ea) 세 가지 맛을
+                                                한 번에 즐길 수 있는 실속 사이드 메뉴!
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>3,400원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><img src="./img/side4.jpg" alt="블랙치즈볼 (5구)" /></figure>
+                                        <dl>
+                                            <dt>블랙치즈볼 (5구)</dt>
+                                            <dd>체다와 모짜렐라 치즈를 듬뿍 담아 푸라닭만의 블랙으로 탄생한 치즈볼.</dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>4,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/side5.jpg" alt="콘소메 레귤러컷" />
+                                        </figure>
+                                        <dl>
+                                            <dt>콘소메 레귤러컷</dt>
+                                            <dd>
+                                                콘소메이징 x 레귤러컷 <br />달콤하게 고소하게! 단짠단짠 입안 가득 와르르
+                                                쏟아지는 콘소메 시즈닝과 바삭한 생생 레귤러컷 감자 튀김!
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>12,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                    <dl>
-                                        <dt>고추마요 치킨</dt>
-                                        <dd>
-                                            강력추천! 맵다, 부드럽다, 고소하다, <br />
-                                            달콤하다, 새콤하다. <br />맛의 조합이 환상적인 강추메뉴.
-                                        </dd>
-                                    </dl>
+                            <!-- 푸레스트 -->
+                            <div class="tab-con-item">
+                                <ul class="meun-con">
+                                    <li>
+                                        <figure><img src="./img/chicken-1.jpg" alt="띱띱크런치" /></figure>
+                                        <div class="menu-text">
+                                            <strong>띱띱 크런치</strong>
+                                            <dl>
+                                                <dt>
+                                                    다채로운 4종의 디핑소스에 <br />
+                                                    독보적 바삭함의 특제 콘 크러스트 <br />
+                                                    '신개념 찍먹 크런치 치킨’
+                                                </dt>
+                                                <dd>
+                                                    (*디핑 소스 4종 제공 : 대파크림, 콘버터, 트러플마요, 홍고추마요)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="best-order">
+                                            <strong>21,900원</strong>
+                                            <a href="menu.html" class="best-order-btn">주문하기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/chicken-2.jpg" alt="고추마요치킨" />
+                                        </figure>
+                                        <dl>
+                                            <dt>고추마요 치킨</dt>
+                                            <dd>
+                                                강력추천! 맵다, 부드럽다, 고소하다, <br />
+                                                달콤하다, 새콤하다. <br />맛의 조합이 환상적인 강추메뉴.
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><img src="./img/chicken-3.jpg" alt="콘소메이징" /></figure>
+                                        <dl>
+                                            <dt>콘소메이징</dt>
+                                            <dd>
+                                                잇츠 콘소메이징! 입안 가득 와르르 쏟아지는 <br />
+                                                옥수수의 무한 매력을 즐겨보세요
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><img src="./img/chicken-4.jpg" alt="블랙알리오" /></figure>
+                                        <dl>
+                                            <dt>블랙알리오</dt>
+                                            <dd>
+                                                깊고 진한 간장과 고소하면서 <br />담백한 마늘의 만남! 진정한 요리를
+                                                <br />느낄 수 있는 푸라닭의 대표 메뉴.
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/chicken-5.jpg" alt="제너럴 핫 치킨" />
+                                        </figure>
+                                        <dl>
+                                            <dt>제너럴 핫 치킨</dt>
+                                            <dd>
+                                                푸라닭의 스타일로 재탄생한 미국식 <br />퓨전 깐풍 소스와 치킨이 결합된
+                                                <br />
+                                                제너럴 쏘 치킨!
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                    <div class="order">
-                                        <strong>20,900원 </strong>
-                                        <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <figure><img src="./img/chicken-3.jpg" alt="콘소메이징" /></figure>
-                                    <dl>
-                                        <dt>콘소메이징</dt>
-                                        <dd>
-                                            잇츠 콘소메이징! 입안 가득 와르르 쏟아지는 <br />
-                                            옥수수의 무한 매력을 즐겨보세요
-                                        </dd>
-                                    </dl>
-                                    <div class="order">
-                                        <strong>20,900원 </strong>
-                                        <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <figure><img src="./img/chicken-4.jpg" alt="블랙알리오" /></figure>
-                                    <dl>
-                                        <dt>블랙알리오</dt>
-                                        <dd>
-                                            깊고 진한 간장과 고소하면서 <br />담백한 마늘의 만남! 진정한 요리를
-                                            <br />느낄 수 있는 푸라닭의 대표 메뉴.
-                                        </dd>
-                                    </dl>
-                                    <div class="order">
-                                        <strong>20,900원 </strong>
-                                        <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./img/chicken-5.jpg" alt="제너럴 핫 치킨" />
-                                    </figure>
-                                    <dl>
-                                        <dt>제너럴 핫 치킨</dt>
-                                        <dd>
-                                            푸라닭의 스타일로 재탄생한 미국식 <br />퓨전 깐풍 소스와 치킨이 결합된
-                                            <br />
-                                            제너럴 쏘 치킨!
-                                        </dd>
-                                    </dl>
-                                    <div class="order">
-                                        <strong>20,900원 </strong>
-                                        <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
-                                    </div>
-                                </li>
-                            </ul>
+                            <!-- 피자 -->
+                            <div class="tab-con-item">
+                                <ul class="meun-con">
+                                    <li>
+                                        <figure><img src="./img/chicken-1.jpg" alt="띱띱크런치" /></figure>
+                                        <div class="menu-text">
+                                            <strong>띱띱 크런치</strong>
+                                            <dl>
+                                                <dt>
+                                                    다채로운 4종의 디핑소스에 <br />
+                                                    독보적 바삭함의 특제 콘 크러스트 <br />
+                                                    '신개념 찍먹 크런치 치킨’
+                                                </dt>
+                                                <dd>
+                                                    (*디핑 소스 4종 제공 : 대파크림, 콘버터, 트러플마요, 홍고추마요)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="best-order">
+                                            <strong>21,900원</strong>
+                                            <a href="menu.html" class="best-order-btn">주문하기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/chicken-2.jpg" alt="고추마요치킨" />
+                                        </figure>
+                                        <dl>
+                                            <dt>고추마요 치킨</dt>
+                                            <dd>
+                                                강력추천! 맵다, 부드럽다, 고소하다, <br />
+                                                달콤하다, 새콤하다. <br />맛의 조합이 환상적인 강추메뉴.
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><img src="./img/chicken-3.jpg" alt="콘소메이징" /></figure>
+                                        <dl>
+                                            <dt>콘소메이징</dt>
+                                            <dd>
+                                                잇츠 콘소메이징! 입안 가득 와르르 쏟아지는 <br />
+                                                옥수수의 무한 매력을 즐겨보세요
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><img src="./img/chicken-4.jpg" alt="블랙알리오" /></figure>
+                                        <dl>
+                                            <dt>블랙알리오</dt>
+                                            <dd>
+                                                깊고 진한 간장과 고소하면서 <br />담백한 마늘의 만남! 진정한 요리를
+                                                <br />느낄 수 있는 푸라닭의 대표 메뉴.
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/chicken-5.jpg" alt="제너럴 핫 치킨" />
+                                        </figure>
+                                        <dl>
+                                            <dt>제너럴 핫 치킨</dt>
+                                            <dd>
+                                                푸라닭의 스타일로 재탄생한 미국식 <br />퓨전 깐풍 소스와 치킨이 결합된
+                                                <br />
+                                                제너럴 쏘 치킨!
+                                            </dd>
+                                        </dl>
+                                        <div class="order">
+                                            <strong>20,900원 </strong>
+                                            <a href="menu.html" class="order-btn"><i class="hidden">주문하기</i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
