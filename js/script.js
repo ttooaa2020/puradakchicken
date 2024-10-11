@@ -1,6 +1,6 @@
 //gnb
+AOS.init();
 $(function () {
-    AOS.init();
     const $window = $(window);
     const $header = $("header");
     const $menu = $(".gnb>li");
@@ -84,25 +84,11 @@ $(function () {
 
     // 대상 .classList.remove('클래스명)//
 
-    //     btnClose.addEventListener("click", () => {
-    //         mobileMenu.classList.remove("active");
-    //     });
-    //
-    //     // 더보기 버튼
-    //     const showMoreButton = document.querySelector(".menu-moer");
-    //     const allItems = document.querySelectorAll(".menu-all-list > li");
-    //
-    //     // 버튼 클릭 이벤트 리스너 추가
-    //     showMoreButton.addEventListener("click", function () {
-    //         // 각 리스트 아이템을 순회하면서 display를 "block"으로 설정
-    //         allItems.forEach((item) => {
-    //             item.style.display = "block";
-    //         });
-    //
-    //         // 클릭 후 버튼 숨기기
-    //         showMoreButton.style.display = "none";
-    //     });
+    btnClose.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });
 
+    // 메인탭
     // 대상을 변수에 저장
     const $tabMenu = $(".tab-menu > li");
     const $tabCon = $(".tab-con-item");
@@ -131,4 +117,49 @@ $(function () {
         $tabCon.hide();
         $tabCon.eq(index).show();
     }
+
+    // 서브탭
+    // 대상을 변수에 저장
+    const $tabMenu2 = $(".all-menu-btn > li");
+    const $tabCon2 = $(".all-tab-item");
+
+    tab2Action(0);
+
+    // 탭메뉴를 클릭 했을때
+    $tabMenu2.on("click", function (e) {
+        // a의 기본 동작막기
+        e.preventDefault();
+
+        // 선택한 탭메뉴의 인덱스 구하기
+        const tabIdx = $(this).index();
+        console.log(tabIdx);
+
+        tab2Action(tabIdx);
+    });
+
+    // 공통의 동작을 함수로 정의
+    function tab2Action(index) {
+        // 탭메뉴 활성화
+        $tabMenu2.removeClass("on");
+        $tabMenu2.eq(index).addClass("on");
+
+        // 인덱스에 해당하는 $tabCon 보이기
+        $tabCon2.hide();
+        $tabCon2.eq(index).show();
+    }
+
+    // 더보기 버튼
+    const MoreButton = document.querySelector(".menu-more");
+    const allItems = document.querySelectorAll(".menu-all-list > li");
+
+    // 버튼 클릭 이벤트 리스너 추가
+    MoreButton.addEventListener("click", function () {
+        // 각 리스트 아이템을 순회하면서 display를 "block"으로 설정
+        allItems.forEach((item) => {
+            item.style.display = "block";
+        });
+
+        // 클릭 후 버튼 숨기기
+        MoreButton.style.display = "none";
+    });
 });
