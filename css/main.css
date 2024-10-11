@@ -9,20 +9,22 @@
 
 /* s.visual */
 .visual {
+    height: 80rem;
+    height: 41.6667%;
     margin-top: 13rem;
     overflow: hidden;
     position: relative;
 }
 
 .visual-img {
-    height: 86rem;
+    width: 100%;
     height: 100%;
 }
 
 .visual img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     object-position: 50% 50%;
 }
 
@@ -74,15 +76,15 @@
 
     display: flex;
     justify-content: center;
-    gap: 2.4rem;
+    gap: 1rem;
 
     z-index: 5;
 }
 
 .swiper-pagination-bullet {
-    width: 1.3rem;
-    height: 1.3rem;
-    background: var(--darck-30);
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
 }
 
 .swiper-pagination-bullet-active {
@@ -112,20 +114,6 @@
 
 .visual-title p {
     font-size: clamp(1.4rem, 1.6vw, 2rem);
-}
-
-.visual-img::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000;
-    opacity: 0.6;
-    pointer-events: none;
-    user-select: none;
-    overflow: hidden;
 }
 
 .app-dwn {
@@ -292,10 +280,6 @@
 /* 카테고리 */
 
 /* 메뉴 틀 */
-.side {
-    background: #000;
-}
-
 .meun-con {
     margin-top: 4.7rem;
     margin-top: 3.3099%;
@@ -458,6 +442,7 @@
 
     color: #000;
 }
+
 /* 작은메뉴 글씨 */
 
 /* 작은메뉴 버튼 */
@@ -695,6 +680,7 @@
     }
 
     /* visual */
+
     .top-slider-wrap .btn-prev::after {
         width: 2.2rem;
         height: 2.2rem;
@@ -708,6 +694,7 @@
         width: 1rem;
         height: 1rem;
     }
+
     /* visual */
 
     /* intor */
@@ -836,7 +823,7 @@
 }
 
 /* 모바일 버전  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .inner {
         width: 39rem;
         width: 90.6977%;
