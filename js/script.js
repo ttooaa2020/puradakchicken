@@ -25,15 +25,15 @@ $(function () {
     });
 
     // 메뉴 리스트 버튼
-    const $btn = $(".meun-btn > li");
-    const $btn2 = $(".all-menu-btn > li");
+    const $btn = $(".meun-btn > li > button");
+    const $btn2 = $(".all-menu-btn > li > button");
 
     btnAction(0);
     btn2Action(0);
 
     $btn.on("click", function () {
-        $(this).siblings().removeClass("on");
         $(this).toggleClass("on");
+        $(this).closest("li").siblings().find("button").removeClass("on");
     });
 
     function btnAction(index) {
@@ -43,8 +43,8 @@ $(function () {
 
     // 서브
     $btn2.on("click", function () {
-        $(this).siblings().removeClass("on");
         $(this).toggleClass("on");
+        $(this).closest("li").siblings().find("button").removeClass("on");
     });
 
     function btn2Action(index) {
@@ -84,23 +84,51 @@ $(function () {
 
     // 대상 .classList.remove('클래스명)//
 
-    btnClose.addEventListener("click", () => {
-        mobileMenu.classList.remove("active");
+    //     btnClose.addEventListener("click", () => {
+    //         mobileMenu.classList.remove("active");
+    //     });
+    //
+    //     // 더보기 버튼
+    //     const showMoreButton = document.querySelector(".menu-moer");
+    //     const allItems = document.querySelectorAll(".menu-all-list > li");
+    //
+    //     // 버튼 클릭 이벤트 리스너 추가
+    //     showMoreButton.addEventListener("click", function () {
+    //         // 각 리스트 아이템을 순회하면서 display를 "block"으로 설정
+    //         allItems.forEach((item) => {
+    //             item.style.display = "block";
+    //         });
+    //
+    //         // 클릭 후 버튼 숨기기
+    //         showMoreButton.style.display = "none";
+    //     });
+
+    // 대상을 변수에 저장
+    const $tabMenu = $(".tab-menu > li");
+    const $tabCon = $(".tab-con-item");
+
+    tabAction(0);
+
+    // 탭메뉴를 클릭 했을때
+    $tabMenu.on("click", function (e) {
+        // a의 기본 동작막기
+        e.preventDefault();
+
+        // 선택한 탭메뉴의 인덱스 구하기
+        const tabIdx = $(this).index();
+        console.log(tabIdx);
+
+        tabAction(tabIdx);
     });
 
-    // 더보기 버튼
-    const showMoreButton = document.querySelector(".menu-moer");
+    // 공통의 동작을 함수로 정의
+    function tabAction(index) {
+        // 탭메뉴 활성화
+        $tabMenu.removeClass("on");
+        $tabMenu.eq(index).addClass("on");
 
-    const allItems = document.querySelectorAll(".menu-all-list > li");
-
-    // 버튼 클릭 이벤트 리스너 추가
-    showMoreButton.addEventListener("click", function () {
-        // 각 리스트 아이템을 순회하면서 display를 "block"으로 설정
-        allItems.forEach((item) => {
-            item.style.display = "block";
-        });
-
-        // 클릭 후 버튼 숨기기
-        showMoreButton.style.display = "none";
-    });
+        // 인덱스에 해당하는 $tabCon 보이기
+        $tabCon.hide();
+        $tabCon.eq(index).show();
+    }
 });
