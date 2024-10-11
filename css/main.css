@@ -22,7 +22,7 @@
 .visual img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     object-position: 50% 50%;
 }
 
@@ -116,7 +116,6 @@
 
 .visual-img::after {
     content: "";
-    height: 86rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -257,12 +256,16 @@
     gap: 1.6rem;
 }
 
-.meun-btn li {
+.meun-btn button {
+    background: inherit;
+}
+
+.meun-btn button {
+    display: block;
     background: #fff;
     width: 15.9rem;
-    width: 11.1972%;
-
     height: 5.8rem;
+
     border-radius: 5rem;
 
     display: flex;
@@ -276,22 +279,23 @@
     color: var(--main-darck);
 }
 
-.meun-btn li.on {
+.meun-btn button.on {
     background: var(--main-darck);
     color: #fff;
 }
 
-.meun-btn li:hover {
+.meun-btn button:hover {
     background: var(--main-darck);
     color: #fff;
 }
 
-.meun-btn li a:hover {
-    color: #fff;
-}
 /* 카테고리 */
 
 /* 메뉴 틀 */
+.side {
+    background: #000;
+}
+
 .meun-con {
     margin-top: 4.7rem;
     margin-top: 3.3099%;
@@ -729,9 +733,8 @@
     /* intor */
 
     /* meun */
-    .meun-btn li {
+    .meun-btn button {
         width: 12.8rem;
-        width: 13.8528%;
         height: 5.2rem;
     }
 
@@ -929,7 +932,7 @@
     }
 
     /* meun */
-    .meun-btn li {
+    .meun-btn button {
         width: 9.2rem;
         height: 4rem;
     }
